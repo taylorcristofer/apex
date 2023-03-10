@@ -1,0 +1,23 @@
+String nomeProduto = 'Brincos'; 
+
+Integer quantidadeAtual = 70; 
+
+Integer quantidadeMaxima = 140; 
+
+Integer quantidadeMinima = 20; 
+
+  
+
+Integer quantidadeMedia = Math.abs((quantidadeMaxima + quantidadeMinima) / 2); 
+
+  
+
+if (quantidadeAtual >= quantidadeMedia) { 
+
+    System.debug('Não efetuar compra'); 
+
+} else { 
+
+    System.debug('Efetuar compra'); 
+
+} 
