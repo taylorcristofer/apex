@@ -1,0 +1,59 @@
+List<String> nomesProdutos = new List<String>(); 
+
+List<Integer> quantidadesAtuais = new List<Integer>(); 
+
+List<Integer> quantidadesMaximas = new List<Integer>(); 
+
+List<Integer> quantidadesMinimas = new List<Integer>(); 
+
+  
+
+for (Integer i = 0; i < 3; i++) { 
+
+    System.debug('Produtos' + (i+1)); 
+
+  
+
+     
+
+    nomesProdutos.add('caneta'); 
+
+    nomesProdutos.add('lapis'); 
+
+    nomesProdutos.add('caderno'); 
+
+    quantidadesAtuais.add(70); 
+
+    quantidadesAtuais.add(48); 
+
+    quantidadesAtuais.add(30); 
+
+    quantidadesMaximas.add(140); 
+
+    quantidadesMaximas.add(100); 
+
+    quantidadesMaximas.add(30); 
+
+    quantidadesMinimas.add(20); 
+
+    quantidadesMinimas.add(10); 
+
+    quantidadesMinimas.add(14); 
+
+} 
+
+for (Integer i = 0; i < 3; i++) { 
+
+	 Integer quantidadeMedia = Math.abs((quantidadesMaximas[i] + quantidadesMinimas[i]) / 2); 
+
+    if (quantidadesAtuais[i] >= quantidadeMedia) { 
+
+        System.debug(nomesProdutos[i] + ': Não efetuar compra'); 
+
+    } else { 
+
+        System.debug(nomesProdutos[i] + ': Efetuar compra'); 
+
+    } 
+
+} 
